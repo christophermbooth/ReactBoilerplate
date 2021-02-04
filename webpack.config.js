@@ -1,4 +1,5 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/app.js',
@@ -13,6 +14,11 @@ module.exports = {
       exclude: /node_modules/
     }]
   },
+  plugins: [
+    new Dotenv({
+      path: './.env'
+    })
+  ],
   devServer: {
     contentBase: path.join(__dirname, 'public')
   }

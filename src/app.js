@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <Nav />
       <p>Begin editing App.js to start developing your App!</p>
+      {process.env.testVar}
     </div>
   )
 }
