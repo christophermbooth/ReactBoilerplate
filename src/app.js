@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './components/Nav'
+import './app.scss';
 
 const App = () => {
   return (
-    <div>
-      <Nav />
+    <>
       <p>Begin editing App.js to start developing your App!</p>
-      {process.env.testVar}
-    </div>
+    </>
   )
 }
 
